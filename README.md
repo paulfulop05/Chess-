@@ -13,7 +13,7 @@ A polished, WinForms-based chess application written in C# (.NET Framework 4.7.2
 - Pawn promotion via `PromotingForm` and end-of-game dialogs.
 - All piece images and UI assets stored in `src/resurse/`.
 
-> Quick note: I inspected `Program.cs` and the project file to gather details. The app starts in `UserForm` (so it presents a login/user screen before the game).
+> The app starts in `UserForm` (so it presents a login/user screen before the game).
 
 ## Screenshots
 
