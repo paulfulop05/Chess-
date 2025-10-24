@@ -15,11 +15,21 @@ A polished, WinForms-based chess application written in C# (.NET Framework 4.7.2
 
 > Quick note: I inspected `Program.cs` and the project file to gather details. The app starts in `UserForm` (so it presents a login/user screen before the game).
 
-## Screenshot
+## Screenshots
 
-If you'd like to include screenshots, add them to the repository (for example `src/resurse/ChessImg.png`) and then reference them here. Example:
+Here's a visual tour of the application:
 
-![screenshot example](src/resurse/ChessImg.png)
+### Login Screen
+
+![Login Screen](docs/chess-login.png)
+
+### Game Board
+
+![Chess Board](docs/chess-board.png)
+
+### Project Icon
+
+![Chess Icon](docs/chess-icon.png)
 
 ## Requirements
 
@@ -62,31 +72,3 @@ Then run the produced executable in `bin\Debug\`.
 - I confirmed the app's entry point is `Program.Main()` which runs `UserForm`.
 - The project references several local resource files in `resurse/` such as piece images and sound effects.
 - I assumed the repository currently doesn't include an explicit LICENSE file — if you want an open source license, add a `LICENSE` (MIT, Apache-2.0, etc.) and I can add a badge and license section.
-
-## Contribution
-
-If you'd like contributions from others, consider adding:
-
-- a `CONTRIBUTING.md` with guidelines,
-- `LICENSE` to declare how the project may be used,
-- simple issues to track features (UI polish, AI opponent, online play).
-
-Small ideas to improve README further (I can add these for you):
-
-- Add screenshots / demo GIF.
-- Add a short recorded demo or link to a video.
-- Add a development section with unit-test guidance (if tests get added).
-
-## Contact & Credits
-
-Created by the repository owner. For questions about implementation details, open an issue or drop a note in the repository.
-
----
-
-If you'd like I can:
-
-1. Add a screenshot and wire it into this README (you can upload one or I can generate a placeholder),
-2. Add a license (MIT recommended) and a build badge,
-3. Generate a short `CONTRIBUTING.md` template.
-
-Tell me which of these you'd like next and I'll apply it.
