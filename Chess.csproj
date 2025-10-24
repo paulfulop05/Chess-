@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4AAE44C0-90E2-4F62-9130-FFF83527E71A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Chess</RootNamespace>
+    <AssemblyName>Chess</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cell.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChessBoard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChessForm.Designer.cs">
+      <DependentUpon>ChessForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassForm.Designer.cs">
+      <DependentUpon>ForgotPassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameEndForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameEndForm.Designer.cs">
+      <DependentUpon>GameEndForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pieces\Bishop.cs" />
+    <Compile Include="Pieces\King.cs" />
+    <Compile Include="Pieces\Knight.cs" />
+    <Compile Include="Pieces\Pawn.cs" />
+    <Compile Include="Pieces\Piece.cs" />
+    <Compile Include="Pieces\Queen.cs" />
+    <Compile Include="PromotingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PromotingForm.Designer.cs">
+      <DependentUpon>PromotingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Pieces\Rook.cs" />
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpForm.Designer.cs">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChessForm.resx">
+      <DependentUpon>ChessForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassForm.resx">
+      <DependentUpon>ForgotPassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameEndForm.resx">
+      <DependentUpon>GameEndForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PromotingForm.resx">
+      <DependentUpon>PromotingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpForm.resx">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\ChessImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\Padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\ShowPass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\Padlock_Unlocked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\HidePass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\PadlockNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\chess_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\chess_knight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\bB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\bK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\bN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\bP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\bQ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\bR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\wB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\wK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\wN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\wP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\wQ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resurse\wR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
