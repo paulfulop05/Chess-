@@ -17,9 +17,9 @@ A polished, WinForms-based chess application written in C# (.NET Framework 4.7.2
 
 ## Screenshot
 
-If you'd like to include screenshots, add them to the repository (for example `docs/screenshot.png`) and then reference them here. Example:
+If you'd like to include screenshots, add them to the repository (for example `src/resurse/ChessImg.png`) and then reference them here. Example:
 
-![screenshot example](docs/screenshot.png)
+![screenshot example](src/resurse/ChessImg.png)
 
 ## Requirements
 
