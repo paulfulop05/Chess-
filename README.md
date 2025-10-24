@@ -1,6 +1,6 @@
 # Chess
 
-![chess icon](resurse/chess_icon.png)
+![chess icon](src/resurse/chess_icon.png)
 
 A polished, WinForms-based chess application written in C# (.NET Framework 4.7.2). This project includes a user/login UI, timed games, move history, piece promotion, sound effects and resource images for pieces and UI icons.
 
@@ -11,7 +11,7 @@ A polished, WinForms-based chess application written in C# (.NET Framework 4.7.2
 - Timed matches with visual low-time warning and sound effects.
 - Move list/history panel, restart and play controls.
 - Pawn promotion via `PromotingForm` and end-of-game dialogs.
-- All piece images and UI assets stored in `resurse/`.
+- All piece images and UI assets stored in `src/resurse/`.
 
 > Quick note: I inspected `Program.cs` and the project file to gather details. The app starts in `UserForm` (so it presents a login/user screen before the game).
 
