@@ -21,15 +21,15 @@ Here's a visual tour of the application:
 
 ### Login Screen
 
-![Login Screen](docs/chess-login.png)
+![Login Screen](src/resurse/ChessImg.png)
 
 ### Game Board
 
-![Chess Board](docs/chess-board.png)
+![Chess Board](src/resurse/chess_knight.png)
 
 ### Project Icon
 
-![Chess Icon](docs/chess-icon.png)
+![Chess Icon](src/resurse/chess_icon.png)
 
 ## Requirements
 
@@ -66,9 +66,3 @@ Then run the produced executable in `bin\Debug\`.
   - `UserForm.*`, `SignUpForm.*`, `ForgotPassForm.*` — user management forms
   - `PromotingForm.*`, `GameEndForm.*` — promotion and end-of-game dialogs
 - `resurse/` — assets (piece images, icons, sound files referenced by the app)
-
-## Notes & Assumptions
-
-- I confirmed the app's entry point is `Program.Main()` which runs `UserForm`.
-- The project references several local resource files in `resurse/` such as piece images and sound effects.
-- I assumed the repository currently doesn't include an explicit LICENSE file — if you want an open source license, add a `LICENSE` (MIT, Apache-2.0, etc.) and I can add a badge and license section.
