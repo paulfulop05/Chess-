@@ -15,22 +15,6 @@ A polished, WinForms-based chess application written in C# (.NET Framework 4.7.2
 
 > The app starts in `UserForm` (so it presents a login/user screen before the game).
 
-## Screenshots
-
-Here's a visual tour of the application:
-
-### Login Screen
-
-![Login Screen](src/resurse/ChessImg.png)
-
-### Game Board
-
-![Chess Board](src/resurse/chess_knight.png)
-
-### Project Icon
-
-![Chess Icon](src/resurse/chess_icon.png)
-
 ## Requirements
 
 - Windows 7 / 8 / 10 / 11
